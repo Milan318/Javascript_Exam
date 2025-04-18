@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-CRUD</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <form method="post" id="form">
+                    <h2>FOOD-PRODUCT-DETAILS</h2>
+                    <div class="mb-3 mt-3">
+                        <label for="product" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" name="product" id="product">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Product Price</label>
+                        <input type="text" class="form-control" name="price" id="price">
+                    </div>
+                    <label for="category" class="form-label">Product Category</label>
+                    <div class="mb-3 ">
+                        <div class="form-check form-check-inline">
+                            <label for="food" class="form-check-label">Food</label>
+                            <input type="radio" value="food" name="food" id="food" class="form-check-input">
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label for="food" class="form-check-label">Non-Food</label>
+                            <input type="radio" value="nonfood" name="food" id="nonfood" class="form-check-input">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+           </form>       
+           </div>
+          </div>   
+          <div class="row mt-5 justify-content-center ">
+            <div class="col-md-8">
+                <table id="table" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Product Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
