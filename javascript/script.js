@@ -48,7 +48,7 @@ form.addEventListener('submit',(event)=>{
 
 const display = () =>{
     showData.innerHTML = '';
-    show.map((shows,index)=>{
+    show.forEach((shows,index)=>{
         let row = document.createElement('tr');
         row.innerHTML = 
         `
