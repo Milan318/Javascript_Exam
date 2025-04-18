@@ -79,7 +79,6 @@ let editData=(index)=>{
     price.value=newuser.price;
     food.value=newuser.food;
 
-
     update.innerHTML="Update";
     update.classList.remove('btn-primary');
     update.classList.add('btn-success');
